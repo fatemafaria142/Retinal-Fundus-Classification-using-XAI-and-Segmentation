@@ -92,6 +92,8 @@ For classification purposes, the FIVES Database was employed, while for segmenta
 |                 | DenseNet201        | 0.6468                         | 0.7822           | 0.7587              | 3.6267                           | 0.0293                    |
 | Swin-UNET       | Swin Transformer   | 0.5179                         | 0.6765           | 0.5987              | 4.6090                           | 0.0891                    |
 
+### Comparative Analysis of Explainable AI Methods
+![Results](Retina_Fundus_XAI.jpeg)
 
 
 ## Contact Information
