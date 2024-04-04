@@ -104,12 +104,14 @@ For any questions, collaboration opportunities, or further inquiries, please fee
 - **Mukaffi Bin Moin**
   - Email: [mukaffi28@gmail.com](mailto:mukaffi28@gmail.com)
 
-- **Ahmed Al Wase**
-  - Email: [ahmed.alwasi34@gmail.com](mailto:ahmed.alwasi34@gmail.com)
+- **Pronay Debnath**
+  - Email: [pronaydebnath99@gmail.com](mailto:pronaydebnath99@gmail.com)
+- **Asif Iftekher Fahim**
+  - Email: [fahimthescientist@gmail.com](mailto:fahimthescientist@gmail.com)
     
 ## Citation
 
-If you find the "Vashantor" dataset or the associated research work helpful, please consider citing our paper:
+If you find the dataset or the associated research work helpful, please consider citing our paper:
 
 ```bibtex
 @misc{faria2023vashantor,
