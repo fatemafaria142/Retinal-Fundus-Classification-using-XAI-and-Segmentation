@@ -60,27 +60,38 @@ For classification purposes, the FIVES Database was employed, while for segmenta
 
 
 
-### Performance Evaluation of Pretrained CNN for Potato Disease Classification
+### U-Net Variants Performance Assessment for Retinal Blood Vessel Segmentation
 
-| **Model**            | **Accuracy** | **Precision** | **Recall** | **F1 Score** | **Log Loss** |
-|----------------------|--------------|---------------|------------|--------------|--------------|
-| DenseNet169         | 1.0000       | 1.0000        | 1.0000     | 1.0000       | 0.0024       |
-| Resnet152V2         | 0.9804       | 0.9792        | 0.9821     | 0.9803       | 0.7067       |
-| InceptionResNetV2   | 0.9902       | 0.9912        | 0.9891     | 0.9901       | 0.3533       |
+#### Using the DRIVE Dataset 
 
+| Models          | Backbone           | Intersection over Union (IoU) | Dice Coefficient | Mean Pixel Accuracy | Mean Modified Hausdorff Distance | Mean Surface Dice Overlap |
+|-----------------|--------------------|--------------------------------|------------------|---------------------|----------------------------------|---------------------------|
+| TransUNET       | ResNet50V2         | 0.5273                         | 0.6899           | 0.6470              | 3.852                            | 0.0151                    |
+|                 | ResNet101V2        | 0.5169                         | 0.6803           | 0.6400              | 4.0864                           | 0.0188                    |
+|                 | ResNet152V2        | 0.5250                         | 0.6879           | 0.6514              | 4.052                            | 0.0167                    |
+| Attention U-Net | ResNet50V2         | 0.6460                         | 0.7848           | 0.7953              | 2.7150                           | 0.0070                    |
+|                 | ResNet101V2        | 0.6483                         | 0.7865           | 0.8023              | 2.7341                           | 0.0054                    |
+|                 | ResNet152V2        | 0.6474                         | 0.7859           | 0.7859              | 2.6718                           | 0.0069                    |
+|                 | DenseNet121        | 0.6427                         | 0.7824           | 0.7747              | 2.7484                           | 0.0090                    |
+|                 | DenseNet169        | 0.6444                         | 0.7837           | 0.7769              | 2.6776                           | 0.0072                    |
+|                 | DenseNet201        | 0.6422                         | 0.7827           | 0.7749              | 2.6475                           | 0.0074                    |
+| Swin-UNET       | Swin Transformer   | 0.4896                         | 0.6569           | 0.6062              | 4.3675                           | 0.0178                    |
 
-### Performance Evaluation of Potato Disease Instance Segmentation
+#### Using the FIVES Dataset 
 
-| **Backbone** | **Task Type** | **AP** | **\(AP_{IoU= 0.5}\)** | **\(AP_{IoU= 0.75}\)** | **Dice Score** |
-|--------------|---------------|--------|-------------------------|-------------------------|----------------|
-| ResNet-50    | Segmentation  | 73.204 | 89.733                  | 86.126                  | 0.6014         |
-|              | Bounding Box  | 83.824 | 90.526                  | 86.353                  |                |
-|--------------|---------------|--------|-------------------------|-------------------------|----------------|
-| ResNet-101   | Segmentation  | 78.681 | 92.905                  | 74.851                  | 0.6728         |
-|              | Bounding Box  | 87.886 | 96.409                  | 90.943                  |                |
-|--------------|---------------|--------|-------------------------|-------------------------|----------------|
-| ResNeXt-101  | Segmentation  | 86.039 | 97.030                  | 96.040                  | 0.8112         |
-|              | Bounding Box  | 97.030 | 97.030                  | 97.030                  |                |
+| Models          | Backbone           | Intersection over Union (IoU) | Dice Coefficient | Mean Pixel Accuracy | Mean Modified Hausdorff Distance | Mean Surface Dice Overlap |
+|-----------------|--------------------|--------------------------------|------------------|---------------------|----------------------------------|---------------------------|
+| TransUNET       | ResNet50V2         | 0.6436                         | 0.7791           | 0.7758              | 3.7392                           | 0.0312                    |
+|                 | ResNet101V2        | 0.6559                         | 0.7898           | 0.7764              | 3.5491                           | 0.0285                    |
+|                 | ResNet152V2        | 0.6522                         | 0.7866           | 0.7696              | 3.5278                           | 0.0319                    |
+| Attention U-Net | ResNet50V2         | 0.7175                         | 0.8353           | 0.8512              | 2.8913                           | 0.0201                    |
+|                 | ResNet101V2        | 0.7221                         | 0.8385           | 0.8507              | 2.8009                           | 0.0223                    |
+|                 | ResNet152V2        | 0.7199                         | 0.8369           | 0.8331              | 2.8134                           | 0.0378                    |
+|                 | DenseNet121        | 0.6872                         | 0.8143           | 0.7866              | 3.2814                           | 0.0591                    |
+|                 | DenseNet169        | 0.6718                         | 0.8024           | 0.8115              | 3.5513                           | 0.0235                    |
+|                 | DenseNet201        | 0.6468                         | 0.7822           | 0.7587              | 3.6267                           | 0.0293                    |
+| Swin-UNET       | Swin Transformer   | 0.5179                         | 0.6765           | 0.5987              | 4.6090                           | 0.0891                    |
+
 
 
 ## Contact Information
