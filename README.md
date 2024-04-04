@@ -26,33 +26,38 @@ Our research focuses on the critical field of early diagnosis of disease by exam
 ### Setup 2: Jupyter Notebook Environment
 - **Environment:**
   - Python Version: 3.10.12
-  - PyTorch Version: 2.1.0
-  - GPU: NVIDIA GeForce RTX 3050 (8 GB)
-  - RAM: 16 GB
-  - Storage: 512 GB NVMe SSD
-
-### Setup 2: Jupyter Notebook Environment
-- **Environment:**
-  - Python Version: 3.10.12
   - Tensforflow Version: 2.6.0
   - GPU: NVIDIA GeForce RTX 3050 (8 GB)
   - RAM: 16 GB
   - Storage: 512 GB NVMe SSD
     
+### Setup 3: Jupyter Notebook Environment
+- **Environment:**
+  - Python Version: 3.10.12
+  - Tensforflow Version: 2.6.0
+  - GPU: NVIDIA GeForce RTX 3060 (8 GB)
+  - RAM: 16 GB
+  - Storage: 512 GB NVMe SSD
+    
 ## Dataset Availability
 
-The Comprehensive Potato Disease Dataset is now publicly accessible! This dataset, available in both jpg and png formats, offers a valuable resource for diverse research and analysis purposes. You can explore and download the dataset at the following link: [Dataset](https://github.com/Wasi34/Comprehensive-Potato-Disease-Dataset). Feel free to utilize this resource for your research, experiments, or any analytical endeavors. Should you have any questions or require further assistance with the dataset, please don't hesitate to reach out.
+For classification purposes, the FIVES Database was employed, while for segmentation tasks, two databases were utilized: DRIVE and FIVES. 
 
 
 ## Results
-### Generated Potato Disease Realistic Image Evaluation Using Frechet Inception Distance and Inception Score
+### Performance Evaluation of Pretrained CNNs for Fundus Image Classification
 
-| **Class**      | **GANs**       | **Frechet Inception Distance** | **Inception Score** |
-|----------------|----------------|--------------------------------|---------------------|
-| Black Scurf    | Cycle GAN      | 0.4028                         | 1.2001              |
-|                | Pix2Pix GAN    | 0.5743                         | 0.9899              |
-| Common Scab    | Cycle GAN      | 0.4882                         | 1.0900              |
-|                | Pix2Pix GAN    | 0.6240                         | 0.9643              |
+| Model             | Accuracy | Precision | Recall  | F1 Score | Jaccard Score | Log Loss |
+|-------------------|----------|-----------|---------|----------|---------------|----------|
+| ResNet101         | 0.9417   | 0.9435    | 0.9417  | 0.9418   | 0.8902        | 0.2254   |
+| DenseNet169       | 0.9333   | 0.9378    | 0.9333  | 0.9333   | 0.8751        | 0.9080   |
+| Xception          | 0.9250   | 0.9284    | 0.9250  | 0.9252   | 0.8612        | 1.3931   |
+| InceptionV3       | 0.9167   | 0.9203    | 0.9167  | 0.9166   | 0.8480        | 0.8012   |
+| DenseNet121       | 0.9083   | 0.9092    | 0.9083  | 0.9075   | 0.8320        | 4.5509   |
+| InceptionResNetV2 | 0.9000   | 0.9049    | 0.9000  | 0.9008   | 0.8202        | 12.0282  |
+| ResNet50          | 0.8917   | 0.8948    | 0.8917  | 0.8926   | 0.8089        | 0.4883   |
+| EfficientNetB0    | 0.8833   | 0.8862    | 0.8833  | 0.8837   | 0.7947        | 0.6697   |
+
 
 
 ### Performance Evaluation of Pretrained CNN for Potato Disease Classification
