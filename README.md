@@ -18,25 +18,25 @@ Our research focuses on the critical field of early diagnosis of disease by exam
 
 ### Setup 1: Kaggle
 - **Environment:**
-  - Python Version: 3.11
-  - PyTorch Version: 2.1.0
+  - Python Version: 3.10.13
+  - TensorFlow Version: 2.15.0
   - GPU: T4 GPU with 7.5 Compute Capability
   - RAM: 30 GB
 
 ### Setup 2: Jupyter Notebook Environment
 - **Environment:**
-  - Python Version: 3.10.12
+  - Python Version: 3.8.18 
   - Tensforflow Version: 2.6.0
-  - GPU: NVIDIA GeForce RTX 3050 (8 GB)
+  - GPU: NVIDIA GeForce RTX 3050 (8 GB) with 8.6 Compute Capability
   - RAM: 16 GB
   - Storage: 512 GB NVMe SSD
     
 ### Setup 3: Jupyter Notebook Environment
 - **Environment:**
-  - Python Version: 3.10.12
+  - Python Version: 3.8.18 
   - Tensforflow Version: 2.6.0
-  - GPU: NVIDIA GeForce RTX 3060 (8 GB)
-  - RAM: 16 GB
+  - GPU: NVIDIA GeForce RTX 3060 Ti (8 GB) with 8.6 Compute Capability
+  - RAM: 32 GB
   - Storage: 512 GB NVMe SSD
     
 ## Dataset Availability
