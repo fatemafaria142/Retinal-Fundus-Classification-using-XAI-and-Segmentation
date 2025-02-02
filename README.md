@@ -116,12 +116,13 @@ For any questions, collaboration opportunities, or further inquiries, please fee
 If you find the dataset or the associated research work helpful, please consider citing our paper:
 
 ```bibtex
-@misc{faria2023vashantor,
-  title={Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language},
-  author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Ahmed Al Wase and Mehidi Ahmmed and Md. Rabius Sani and Tashreef Muhammad},
-  year={2023},
-  eprint={2311.11142},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL}
+@misc{faria2024explainableconvolutionalneuralnetworks,
+      title={Explainable Convolutional Neural Networks for Retinal Fundus Classification and Cutting-Edge Segmentation Models for Retinal Blood Vessels from Fundus Images}, 
+      author={Fatema Tuj Johora Faria and Mukaffi Bin Moin and Pronay Debnath and Asif Iftekher Fahim and Faisal Muhammad Shah},
+      year={2024},
+      eprint={2405.07338},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2405.07338}, 
 }
 
